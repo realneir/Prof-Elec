@@ -112,12 +112,12 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-  background-color: coral;
+  background-color: rgb(255, 186, 161);
 }
 
 tr:hover button {
   /* background-color: #040d21; */
-  background-color: rgb(163, 83, 53);
+  background-color: coral;
   padding: 15px;
 }
 
