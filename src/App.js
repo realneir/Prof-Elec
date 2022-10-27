@@ -84,20 +84,20 @@ const Project = () => {
 	const Dashboard = menu.map
 		(
 			menu =>
-				<th> {menu} </th>
+				<th id='table-header'> {menu} </th>
 		);
 
 	const userInfo = detail.map
 		(
 			det =>
 				<tr>
-					<td>{det.id}</td>
-					<td>{det.name}</td>
-					<td>{det.username}</td>
-					<td>{det.email}</td>
-					<td>{det.phone}</td>
-					<td>
-						<button onClick={() => {
+					<td className="table-detail1">{det.id}</td>
+					<td className="table-detail2">{det.name}</td>
+					<td className="table-detail2">{det.username}</td>
+					<td className="table-detail2">{det.email}</td>
+					<td className="table-detail2">{det.phone}</td>
+					<td className="table-detail3">
+						<button className="view-details-btn" onClick={() => {
 							setaccDet(det.id - 1);
 							setViewDetail(true);
 						}
@@ -119,7 +119,7 @@ const Project = () => {
 							{userInfo}
 						</table>
 					</div>
-					<h2 data-testid="total-users">Total Users: {totalUsers}</h2>
+					<h2 id='total-users' data-testid="total-users">Total Users: {totalUsers}</h2>
 				</>
 			);
 		}
@@ -131,24 +131,24 @@ const Project = () => {
 
 					<table>
 						<tr>
-							<td>Id:</td>
-							<td><b>{detail[accDet].id}</b></td>
+						<td className="table-detail2">Id:</td>
+						<td className="table-detail2"><b>{detail[accDet].id}</b></td>
 						</tr>
 						<tr>
-							<td>Name:</td>
-							<td><b>{detail[accDet].name}</b></td>
+						<td className="table-detail2">Name:</td>
+						<td className="table-detail2"><b>{detail[accDet].name}</b></td>
 						</tr>
 						<tr>
-							<td>Address:</td>
-							<td><b>
+							<td className="table-detail2">Address:</td>
+							<td className="table-detail2"><b>
 								{`${detail[accDet].address.street} 
                	 				${detail[accDet].address.suite}
 								  ${detail[accDet].address.city} 
                 				${detail[accDet].address.zipcode}`}</b></td>
 						</tr>
 						<tr>
-							<td>Company:</td>
-							<td><b>{detail[accDet].company.name}</b></td>
+							<td className="table-detail2">Company:</td>
+							<td className="table-detail2"><b>{detail[accDet].company.name}</b></td>
 						</tr>
 					</table>
 					
@@ -166,6 +166,9 @@ const Project = () => {
 	if (!screen) {
 		return (
 			<>
+			<div id="circle1"></div>
+			<div id="circle2"></div>
+			<div id="circle3"></div>
 				<div className="container">
 					<div className="login-form">
 						<div className="login">
@@ -173,7 +176,7 @@ const Project = () => {
 								<label htmlFor="income">Enter Email<label className="asterisk"> *</label></label>
 							</div>
 							<input
-								placeholder="eve.holt@regres.in"
+								placeholder="eve.holt@reqres.in"
 								type="text"
 								onChange={onChange}
 								data-testid="email"

@@ -1,49 +1,82 @@
 /*================TABLE DESIGN===================*/
 
 #user-title {
-    text-align: center;
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+  background: -webkit-linear-gradient(357deg, rgba(207,74,164,1) 0%, rgba(55,128,243,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .table-container {
-    background-color: #fff;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 50px;
-    border-radius: 10px;
-    width: fit-content;
-    height: auto;
-    box-shadow: 2px 12px 20px -7px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 0px;
+  border-radius: 10px;
+  width: fit-content;
+  height: auto;
 }
-
 
 /*==============HEADER DESIGN==================*/
 
 .header-menu {
+  position: fixed;
+  top: 0;
+  color: #000;
+  text-align: end;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: -webkit-fill-available;
+  border-radius: 0px 0px 10px 10px;
+  transition: 0.3s;
+  box-shadow: 0px 10px 9px 0px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  margin-bottom: 5em;
+  background-color: #fff;
+}
 
-    position: relative;
-    color: #000;
-    text-align:end;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 100%;
-    border-radius: 10px;
-    transition: .3s;
-    box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.25);
-    display:inline-block;
-    margin-bottom: 5em;
-  }
-  
-  #logout {
-    background-color: #27bdf8;
-    transition: .2s;
-    margin-left:5em!important;
-    margin-right:5em!important;
-    width: fit-content;
-  }
-  
-  #logout a {
-    color: white;
-    text-decoration: inherit;
-    transition: .2s;
-  }
+#logout {
+  background-color: #26a641;
+  transition: 0.2s;
+  margin-left: 5em !important;
+  margin-right: 5em !important;
+  width: fit-content;
+}
+
+#logout:hover {
+  background-color: #39d353;
+  transition: 0.2s;
+}
+
+#logout a {
+  color: white;
+  text-decoration: inherit;
+  transition: 0.2s;
+}
+
+.table-detail1 {
+  padding: 12px;
+  text-align: center;
+}
+
+.table-detail2 {
+  padding: 12px;
+}
+
+.view-details-btn {
+  padding: 10px 15px !important;
+}
+
+.even {
+  background-color: #808080;
+}
+
+#table-header {
+  background-color: #040d21;
+  color: #fff;
+  padding: 15px;
+}
+
